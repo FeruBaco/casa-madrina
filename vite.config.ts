@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import path from "path";
 import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
@@ -24,4 +25,13 @@ export default defineConfig({
     // produce sourcemaps for debug builds
     sourcemap: !!process.env.TAURI_DEBUG,
   },
+  // To make usable @ during development like and absolute path
+  resolve: {
+    alias: [
+      {
+        find: '@',
+        replacement: path.resolve(__dirname, 'src')
+      }
+    ]
+  }
 });

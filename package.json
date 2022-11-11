@@ -10,17 +10,36 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@mantine/core": "^5.6.3",
+    "@mantine/dates": "^5.6.3",
+    "@mantine/form": "^5.6.3",
+    "@mantine/hooks": "^5.6.3",
+    "@mantine/modals": "^5.6.3",
+    "@mantine/notifications": "^5.6.3",
+    "@mantine/nprogress": "^5.6.3",
+    "@tauri-apps/api": "^1.1.0",
+    "dayjs": "^1.11.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@tauri-apps/api": "^1.1.0"
+    "react-router-dom": "^6.4.2"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^1.1.0",
     "@types/node": "^18.7.10",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.41.0",
     "@vitejs/plugin-react": "^2.0.0",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.2",
-    "@tauri-apps/cli": "^1.1.0"
+    "eslint": "^8.27.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.10",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.0.2"
   }
 }
