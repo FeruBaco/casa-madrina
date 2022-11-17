@@ -1,4 +1,4 @@
-export type UserEntity = {
+export interface UserContext {
   user: string
   logged: boolean
   uid: string

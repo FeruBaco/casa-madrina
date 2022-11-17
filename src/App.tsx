@@ -1,5 +1,5 @@
-// import { invoke } from "@tauri-apps/api/tauri";
 import { AppProvider } from '@/providers/app'
+import { AppRoutes } from '@/routes'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
@@ -7,6 +7,8 @@ import ReactDOM from 'react-dom/client'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <AppProvider> </AppProvider>
+    <AppProvider>
+      <AppRoutes />
+    </AppProvider>
   </React.StrictMode>
 )

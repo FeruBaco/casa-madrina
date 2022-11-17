@@ -1,6 +1,6 @@
-import logo from '@assets/images/logo.png'
-import { Center } from '@mantine/core'
+import { Box, Center, Image } from '@mantine/core'
 import { useViewportSize } from '@mantine/hooks'
+import logo from '@/assets/images/logo.png'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -14,7 +14,15 @@ const LoginLayout = ({ children }: LayoutProps) => {
       <Center
         sx={theme => ({ backgroundColor: theme.colors.pink[0] })}
         style={{ height, width }}>
-        {children}
+        <Box
+          sx={theme => ({
+            backgroundColor: theme.colors.pink[0],
+            width: '260px'
+          })}
+          mx='auto'>
+          <Image src={logo} alt='Logo' />
+          {children}
+        </Box>
       </Center>
     </>
   )
