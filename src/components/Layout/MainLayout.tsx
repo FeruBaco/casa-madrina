@@ -20,15 +20,27 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
               ? theme.colors.dark[8]
               : theme.colors.gray[2]
         }
-      })}>
-      <Navbar>
-        <Navbar.Section>
-          <Image src={logo} alt='Logo' width={150} />
-        </Navbar.Section>
-        <Navbar.Section grow mt='lg'>
-          <SidebarMenu />
-        </Navbar.Section>
-      </Navbar>
+      })}
+      navbar={
+        <Navbar
+          width={{ sm: 250, md: 300, lg: 350 }}
+          p='md'
+          style={{ borderTopRightRadius: 30, borderBottomRightRadius: 30 }}>
+          <Navbar.Section>
+            <Image
+              src={logo}
+              alt='Logo'
+              style={{ width: 150, marginLeft: 'auto', marginRight: 'auto' }}
+            />
+          </Navbar.Section>
+          <Navbar.Section grow mt='sm'>
+            <SidebarMenu />
+          </Navbar.Section>
+          {/* <Navbar.Section>
+            TODO: Check if add footer of user or something else
+          </Navbar.Section> */}
+        </Navbar>
+      }>
       {children}
     </AppShell>
   )
